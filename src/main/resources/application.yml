@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /demo
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo?useUnicode=true&characeterEncoding=utf-8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+swagger:
+  enabled: true
